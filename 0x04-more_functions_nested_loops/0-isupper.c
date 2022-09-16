@@ -1,15 +1,37 @@
 // C program to demonstrate
 // isupper() function
+
 #include <ctype.h>
 #include <stdio.h>
+
+// called function
+int ttl_upper(int i, int counter)
+{
+	char ch;
+	char a[50] = "GeeksForGeeks";
+	ch = a[0];
+
+	// counting of upper case
+	while (ch != '\0') {
+		ch = a[i];
+		if (isupper(ch))
+			counter++;
+
+		i++;
+	}
+
+	// returning total number of upper case present in sentence
+	return (counter);
+}
 int main()
 {
-	char ch = 'A';
+	int i = 0;
+	int counter = 0;
 
-	// checking uppercase
-	if (isupper(ch))
-		printf("\nEntered character is uppercase character");
-	else
-		printf("\nEntered character is not uppercase character");
+	// calling function
+	counter = ttl_upper(i, counter);
+	printf("\nNumber of upper case present in the sentence is : %d", counter);
+	return 0;
 }
+
 
