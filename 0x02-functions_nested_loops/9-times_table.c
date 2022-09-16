@@ -6,7 +6,6 @@
  * Return: times table
  * add extra space past single digit
  */
-
 void times_table(void)
 
 {
@@ -42,7 +41,7 @@ void times_table(void)
 			}
 		}
 		_putchar('\n');
-    
+
 	}
 
 
