@@ -16,23 +16,33 @@ void times_table(void)
 	for (rone = 0; rone <= 9; cone++)
 	{
 
-		d = (rone * cone);
-		if ((d / 10) > 0)
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (cone = 1; cone <= 9; cone++)
 		{
-			_putchar((d / 10) + '0');
+			d = (rone * cone);
+			if ((d / 10) > 0)
+			{	
+				_putchar((d / 10) + '0');
 
+			}
+			else
+			{
+		
+				_putchar(' ');
+
+			}
+			_putchar((d % 10) + '0');
+
+			if (cone < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		else
-		{
+		_putchar('\n');
+    }
 
-		_putchar((d % 10) + '0');
 
-		if (cone < 9)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	}
 }
