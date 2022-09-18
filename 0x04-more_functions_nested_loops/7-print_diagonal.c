@@ -30,7 +30,7 @@ void print_diagonal(int n)
 			a++;
 			b = 0;
 			_putchar('\\');
-			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 	else
